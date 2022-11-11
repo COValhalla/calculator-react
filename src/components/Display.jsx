@@ -6,9 +6,9 @@ function Display({ result, inputUpdate, inputAdd }) {
   return (
     <div className="h-20 w-full overflow-auto border bg-gray-800">
       {/* Column 1, string */}
-      <div className="flex flex-col text-xs">
+      <div className="flex max-w-[260px] flex-col text-xs">
         {reversedResult.map((item) => (
-          <div key={uuidv4()} className="flex max-w-[272px] px-2">
+          <div key={uuidv4()} className="flex  px-2">
             <button
               onClick={() => inputUpdate({ target: { value: item.input } })}
               type="button"

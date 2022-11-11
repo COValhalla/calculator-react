@@ -8,7 +8,7 @@ function Input({ value, inputUpdate, inputRef }) {
         autoFocus
         onChange={inputUpdate}
         value={value.join('')}
-        className="h-8 w-[270px] rounded-sm border bg-gray-900 px-1"
+        className="h-8 w-full rounded-sm border bg-gray-900 px-1"
         type="text"
       />
     </div>

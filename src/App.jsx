@@ -13,15 +13,12 @@ function App() {
 
   const buttonUpdate = useCallback(
     (input) => {
-      if (input === '=') {
+      if (input === '=' && value.length > 0) {
         try {
-          setResult((prevResult) => [
-            ...prevResult,
-            {
-              input: value.join(''),
-              result: evaluate(value.join('')),
-            },
-          ])
+          const evalResult = evaluate(value.join(''))
+          const clone = structuredClone(result)
+          setResult([...clone, { input: value.join(''), evalResult }])
+          setValue([])
           setError('')
         } catch (err) {
           setError('Invalid expression, try again.')
@@ -32,7 +29,7 @@ function App() {
         )
       } else if (input === 'clear') {
         setValue([])
-      } else {
+      } else if (input !== '=') {
         setValue((prevValue) => [...prevValue, input])
       }
       inputRef.current.focus()

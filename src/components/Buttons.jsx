@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react'
 
 function Buttons({ buttonUpdate }) {
-  // Add event listner to the window object
-  // to listen for keypress events
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress)
 
     function handleKeyPress(e) {
       if (e.key === 'Escape') {
         buttonUpdate('clear')
+      } else if (e.key === 'Enter') {
+        buttonUpdate('=')
       }
     }
 
     return () => {
       window.removeEventListener('keypress', handleKeyPress)
     }
-  }, [])
+  }, [buttonUpdate])
 
   return (
     <div className="flex flex-col">

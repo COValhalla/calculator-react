@@ -2,8 +2,8 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 function Display({ result }) {
+  console.log(result)
   const reversedResult = result.slice(0).reverse()
-  console.log('Reversed: ', reversedResult)
   return (
     <div className="h-20 w-[270px] overflow-auto border bg-gray-800">
       {/* Column 1, string */}
@@ -17,7 +17,7 @@ function Display({ result }) {
               =
             </p>
             <p key={uuidv4()} className="w-4/12 truncate text-right">
-              {item.result}
+              {item.evalResult}
             </p>
           </div>
         ))}

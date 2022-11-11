@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useRef } from 'react'
 import { evaluate } from 'mathjs'
 import Display from './components/Display'
 import Input from './components/Input'
@@ -8,6 +8,8 @@ function App() {
   const [value, setValue] = useState([])
   const [result, setResult] = useState('')
   const [error, setError] = useState('')
+
+  const inputRef = useRef(null)
 
   const buttonUpdate = useCallback(
     (input) => {
@@ -25,6 +27,7 @@ function App() {
       } else {
         setValue((prevValue) => [...prevValue, input])
       }
+      inputRef.current.focus()
     },
     [value],
   )
@@ -37,7 +40,7 @@ function App() {
     <div className="flex flex-col items-center gap-2 p-6 text-gray-200">
       <h1 className="text-2xl font-bold">React Calculator</h1>
       <Display result={result} />
-      <Input value={value} inputUpdate={inputUpdate} />
+      <Input value={value} inputUpdate={inputUpdate} inputRef={inputRef} />
       {error !== '' && <p className="text-red-500">{error}</p>}
       <Buttons buttonUpdate={buttonUpdate} />
     </div>

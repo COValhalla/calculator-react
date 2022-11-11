@@ -40,11 +40,14 @@ function App() {
   const inputUpdate = (input) => {
     setValue(input.target.value.split(''))
   }
+  const inputAdd = (input) => {
+    setValue((prevValue) => [...prevValue, input])
+  }
 
   return (
     <div className="mx-auto flex w-min flex-col items-center gap-2 p-6 text-gray-200">
       <h1 className="text-2xl font-bold">Calculator</h1>
-      <Display result={result} />
+      <Display inputAdd={inputAdd} inputUpdate={inputUpdate} result={result} />
       <Input
         buttonUpdate={buttonUpdate}
         value={value}

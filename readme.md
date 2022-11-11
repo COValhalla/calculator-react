@@ -18,4 +18,4 @@ A basic react calculator that utilizes mathjs to evaluate complex string express
 
 - ~~On invalid input, highlight/focus specific characters that fail~~
 - Perform character replacement for common operators, x for \* (multiplication)
-- On history expression click, fill input.
+- ~~On history expression click, fill input.~~

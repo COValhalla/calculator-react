@@ -8,7 +8,7 @@ function Display({ result, inputUpdate, inputAdd }) {
       {/* Column 1, string */}
       <div className="flex flex-col text-xs">
         {reversedResult.map((item) => (
-          <div key={uuidv4()} className="flex px-2">
+          <div key={uuidv4()} className="flex max-w-[272px] px-2">
             <button
               onClick={() => inputUpdate({ target: { value: item.input } })}
               type="button"

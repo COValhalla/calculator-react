@@ -113,11 +113,11 @@ function Buttons({ buttonUpdate }) {
             3
           </button>
           <button
-            onClick={() => buttonUpdate('=')}
+            onClick={() => buttonUpdate('%')}
             type="button"
             className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
-            =
+            %
           </button>
         </div>
         {/* Column 4 */}
@@ -128,9 +128,9 @@ function Buttons({ buttonUpdate }) {
               buttonUpdate('%')
             }}
             type="button"
-            className="h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className="h-10 w-10 rounded-md border bg-gray-800    hover:bg-gray-600"
           >
-            %
+            mod
           </button>
 
           <button

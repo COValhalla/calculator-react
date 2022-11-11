@@ -29,12 +29,15 @@ function App() {
     [value],
   )
 
+  const inputUpdate = (input) => {
+    setValue(input.target.value.split(''))
+  }
+
   return (
-    <div className="mx-auto flex w-[400px] flex-col gap-2 text-gray-200">
-      <h1 className="text-3xl font-bold underline">Calculator</h1>
+    <div className="flex flex-col items-center gap-2 p-6 text-gray-200">
+      <h1 className="text-2xl font-bold">React Calculator</h1>
       <Display result={result} />
-      <Input value={value} />
-      {/* Show error message */}
+      <Input value={value} inputUpdate={inputUpdate} />
       {error !== '' && <p className="text-red-500">{error}</p>}
       <Buttons buttonUpdate={buttonUpdate} />
     </div>

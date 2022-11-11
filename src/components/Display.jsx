@@ -8,11 +8,11 @@ function Display({ result, inputUpdate, inputAdd }) {
       {/* Column 1, string */}
       <div className="flex max-w-[260px] flex-col text-xs">
         {reversedResult.map((item) => (
-          <div key={uuidv4()} className="grid grid-cols-6 px-2">
+          <div key={uuidv4()} className="grid min-h-0 min-w-0 grid-cols-6 px-2">
             <button
               onClick={() => inputUpdate({ target: { value: item.input } })}
               type="button"
-              className="col-span-3  cursor-default truncate text-left"
+              className="col-span-3  min-w-0 cursor-default overflow-hidden truncate text-left"
             >
               {item.input}
             </button>
@@ -20,7 +20,7 @@ function Display({ result, inputUpdate, inputAdd }) {
             <button
               onClick={() => inputAdd(item.evalResult)}
               type="button"
-              className="col-span-2 cursor-default truncate text-right"
+              className="col-span-2 min-w-0 cursor-default overflow-hidden truncate text-right"
             >
               {item.evalResult}
             </button>

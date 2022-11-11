@@ -13,3 +13,9 @@ This is a boilerplate project for getting up and running quickly without having 
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Class Sorting with Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)-
 - [ESLint-config-react & Prettier](https://www.imaginarycloud.com/blog/how-to-configure-eslint-prettier-in-react/)
+
+## Todos
+
+- On invalid input, highlight/focus specific characters that fail
+- Perform character replacement for common operators, x for \* (multiplication)
+- Improve rounding (toFixed)

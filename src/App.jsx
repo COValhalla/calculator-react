@@ -6,7 +6,7 @@ import Buttons from './components/Buttons'
 
 function App() {
   const [value, setValue] = useState([])
-  const [result, setResult] = useState('')
+  const [result, setResult] = useState([])
   const [error, setError] = useState('')
 
   const inputRef = useRef(null)
@@ -15,7 +15,13 @@ function App() {
     (input) => {
       if (input === '=') {
         try {
-          setResult(evaluate(value.join('')))
+          setResult((prevResult) => [
+            ...prevResult,
+            {
+              input: value.join(''),
+              result: evaluate(value.join('')),
+            },
+          ])
           setError('')
         } catch (err) {
           setError('Invalid expression, try again.')

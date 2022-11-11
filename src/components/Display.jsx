@@ -1,9 +1,27 @@
 import React from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 function Display({ result }) {
+  const reversedResult = result.slice(0).reverse()
+  console.log('Reversed: ', reversedResult)
   return (
-    <div className="h-20 w-[270px] border bg-gray-800">
-      <div>{result}</div>
+    <div className="h-20 w-[270px] overflow-auto border bg-gray-800">
+      {/* Column 1, string */}
+      <div className="flex flex-col text-xs">
+        {reversedResult.map((item) => (
+          <div className="flex px-2">
+            <p key={uuidv4()} className="w-7/12 truncate">
+              {item.input}
+            </p>
+            <p key={uuidv4()} className="w-1/12 text-center">
+              =
+            </p>
+            <p key={uuidv4()} className="w-4/12 truncate text-right">
+              {item.result}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

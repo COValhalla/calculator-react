@@ -3,7 +3,6 @@ import React from 'react'
 function Input({ value, inputUpdate, inputRef }) {
   return (
     <div on className="flex flex-col gap-1">
-      {/* Text Input */}
       <input
         ref={inputRef}
         autoFocus

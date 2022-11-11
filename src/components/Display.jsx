@@ -2,7 +2,6 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 function Display({ result }) {
-  console.log(result)
   const reversedResult = result.slice(0).reverse()
   return (
     <div className="h-20 w-[270px] overflow-auto border bg-gray-800">

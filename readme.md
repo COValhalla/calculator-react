@@ -1,6 +1,6 @@
-# React Boilerplate Project
+# React Calculator
 
-This is a boilerplate project for getting up and running quickly without having to install a bunch of random packages.
+"This is a basic react calculator that utilizes mathjs to allow evaluation of complex string inputs."
 
 ## Authors
 
@@ -18,4 +18,4 @@ This is a boilerplate project for getting up and running quickly without having 
 
 - On invalid input, highlight/focus specific characters that fail
 - Perform character replacement for common operators, x for \* (multiplication)
-- Improve rounding (toFixed)
+- Click previous entry in formula to autofill input.

@@ -47,7 +47,7 @@ function App() {
   }
 
   return (
-    <div className="mx-auto flex w-min flex-col items-center gap-2 p-6 text-gray-200">
+    <div className="m-3 mx-auto flex w-min flex-col items-center gap-2 rounded bg-slate-900 p-3 text-gray-200">
       <h1 className="text-2xl font-bold">Calculator</h1>
       <Display inputAdd={inputAdd} inputUpdate={inputUpdate} result={result} />
       <Input

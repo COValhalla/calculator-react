@@ -17,7 +17,7 @@ function Input({ value, inputUpdate, inputRef, buttonUpdate }) {
         value={value.join('')}
         className="h-8 w-full rounded-sm border bg-gray-900 px-1"
         type="text"
-        pattern="\d*"
+        inputMode="numeric"
       />
     </div>
   )

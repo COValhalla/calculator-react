@@ -39,9 +39,11 @@ function App() {
 
   const inputUpdate = (input) => {
     setValue(input.target.value.split(''))
+    inputRef.current.focus()
   }
   const inputAdd = (input) => {
     setValue((prevValue) => [...prevValue, input])
+    inputRef.current.focus()
   }
 
   return (

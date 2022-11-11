@@ -8,19 +8,19 @@ function Display({ result, inputUpdate, inputAdd }) {
       {/* Column 1, string */}
       <div className="flex max-w-[260px] flex-col text-xs">
         {reversedResult.map((item) => (
-          <div key={uuidv4()} className="flex  px-2">
+          <div key={uuidv4()} className="grid grid-cols-6 px-2">
             <button
               onClick={() => inputUpdate({ target: { value: item.input } })}
               type="button"
-              className="w-7/12 cursor-default truncate text-left"
+              className="col-span-3  cursor-default truncate text-left"
             >
               {item.input}
             </button>
-            <p className="w-1/12 text-center">=</p>
+            <p className="col-span-1 text-center">=</p>
             <button
               onClick={() => inputAdd(item.evalResult)}
               type="button"
-              className="w-4/12 cursor-default truncate text-right"
+              className="col-span-2 cursor-default truncate text-right"
             >
               {item.evalResult}
             </button>

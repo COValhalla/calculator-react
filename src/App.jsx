@@ -24,6 +24,8 @@ function App() {
         setValue((prevValue) =>
           prevValue.filter((_, index) => index !== prevValue.length - 1),
         )
+      } else if (input === 'clear') {
+        setValue([])
       } else {
         setValue((prevValue) => [...prevValue, input])
       }

@@ -16,7 +16,7 @@ function Input({ value, inputUpdate, inputRef, buttonUpdate }) {
         onChange={inputUpdate}
         value={value.join('')}
         className="h-8 w-full rounded-sm border bg-gray-900 px-1"
-        type="number"
+        type="text"
         pattern="\d*"
       />
     </div>

@@ -21,7 +21,7 @@ function App() {
           setValue([])
           setError('')
         } catch (err) {
-          setError('Invalid expression, try again.')
+          setError(err.message)
         }
       } else if (input === 'back') {
         setValue((prevValue) =>
@@ -51,7 +51,7 @@ function App() {
         inputUpdate={inputUpdate}
         inputRef={inputRef}
       />
-      {error !== '' && <p className="text-red-500">{error}</p>}
+      {error !== '' && <p className="text-xs text-red-500">{error}</p>}
       <Buttons buttonUpdate={buttonUpdate} />
     </div>
   )

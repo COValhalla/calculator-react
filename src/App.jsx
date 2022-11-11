@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="mx-auto flex max-w-[270px] flex-col items-center gap-2 p-6 text-gray-200">
-      <h1 className="text-2xl font-bold">React Calculator</h1>
+      <h1 className="text-2xl font-bold">Calculator</h1>
       <Display result={result} />
       <Input value={value} inputUpdate={inputUpdate} inputRef={inputRef} />
       {error !== '' && <p className="text-red-500">{error}</p>}

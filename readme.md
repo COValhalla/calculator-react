@@ -16,6 +16,6 @@ A basic react calculator that utilizes mathjs to evaluate complex string express
 
 ## Todos
 
-- On invalid input, highlight/focus specific characters that fail
+- ~~On invalid input, highlight/focus specific characters that fail~~
 - Perform character replacement for common operators, x for \* (multiplication)
 - On history expression click, fill input.

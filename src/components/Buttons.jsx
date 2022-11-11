@@ -7,8 +7,6 @@ function Buttons({ buttonUpdate }) {
     function handleKeyPress(e) {
       if (e.key === 'Escape') {
         buttonUpdate('clear')
-      } else if (e.key === 'Enter') {
-        buttonUpdate('=')
       }
     }
 

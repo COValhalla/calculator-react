@@ -31,10 +31,10 @@ function App() {
         setValue([])
       } else if (input !== '=') {
         setValue((prevValue) => [...prevValue, input])
+        inputRef.current.focus()
       }
-      inputRef.current.focus()
     },
-    [value],
+    [value, result],
   )
 
   const inputUpdate = (input) => {
@@ -45,7 +45,12 @@ function App() {
     <div className="mx-auto flex w-min flex-col items-center gap-2 p-6 text-gray-200">
       <h1 className="text-2xl font-bold">Calculator</h1>
       <Display result={result} />
-      <Input value={value} inputUpdate={inputUpdate} inputRef={inputRef} />
+      <Input
+        buttonUpdate={buttonUpdate}
+        value={value}
+        inputUpdate={inputUpdate}
+        inputRef={inputRef}
+      />
       {error !== '' && <p className="text-red-500">{error}</p>}
       <Buttons buttonUpdate={buttonUpdate} />
     </div>

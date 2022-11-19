@@ -4,9 +4,9 @@ import { v4 as uuidv4 } from 'uuid'
 function Display({ result, inputUpdate, inputAdd }) {
   const reversedResult = result.slice(0).reverse()
   return (
-    <div className="h-20 w-full overflow-auto border bg-gray-800">
+    <div className="h-20 w-full overflow-auto border bg-gray-800 font-light">
       {/* Column 1, string */}
-      <div className="flex max-w-[260px] flex-col text-xs">
+      <div className="flex max-w-[300px] flex-col gap-1 text-sm">
         {reversedResult.map((item) => (
           <div key={uuidv4()} className="grid min-h-0 min-w-0 grid-cols-6 px-2">
             <button

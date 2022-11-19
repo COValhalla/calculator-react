@@ -25,7 +25,7 @@ function Buttons({ buttonUpdate }) {
               buttonUpdate('back')
             }}
             type="button"
-            className="h-10 w-10 rounded-md border  bg-red-700 hover:bg-red-600"
+            className="h-12 w-12 rounded-md border  bg-red-700 hover:bg-red-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,28 +45,28 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate('7')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600 "
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600 "
           >
             7
           </button>
           <button
             onClick={() => buttonUpdate('4')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             4
           </button>
           <button
             onClick={() => buttonUpdate('1')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             1
           </button>
           <button
             onClick={() => buttonUpdate('0')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             0
           </button>
@@ -76,35 +76,35 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate('(')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             (
           </button>
           <button
             onClick={() => buttonUpdate('8')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             8
           </button>
           <button
             onClick={() => buttonUpdate('5')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             5
           </button>
           <button
             onClick={() => buttonUpdate('2')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             2
           </button>
           <button
             onClick={() => buttonUpdate('.')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             .
           </button>
@@ -114,35 +114,35 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate(')')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             )
           </button>
           <button
             onClick={() => buttonUpdate('9')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             9
           </button>
           <button
             onClick={() => buttonUpdate('6')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             6
           </button>
           <button
             onClick={() => buttonUpdate('3')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             3
           </button>
           <button
             onClick={() => buttonUpdate('%')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             %
           </button>
@@ -155,7 +155,7 @@ function Buttons({ buttonUpdate }) {
               buttonUpdate('%')
             }}
             type="button"
-            className="h-10 w-10 rounded-md border bg-gray-800    hover:bg-gray-600"
+            className="h-12 w-12 rounded-md border bg-gray-800    hover:bg-gray-600"
           >
             mod
           </button>
@@ -163,28 +163,28 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate('/')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             /
           </button>
           <button
             onClick={() => buttonUpdate('*')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             ×
           </button>
           <button
             onClick={() => buttonUpdate('-')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             -
           </button>
           <button
             onClick={() => buttonUpdate('+')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             +
           </button>
@@ -194,7 +194,7 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate('pi')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             &Pi;
           </button>
@@ -202,14 +202,14 @@ function Buttons({ buttonUpdate }) {
           <button
             onClick={() => buttonUpdate('sqrt(')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             &#8730;
           </button>
           <button
             onClick={() => buttonUpdate('^')}
             type="button"
-            className=" h-10 w-10 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
+            className=" h-12 w-12 rounded-md border bg-gray-800  p-2 hover:bg-gray-600"
           >
             x&#178;
           </button>
@@ -217,7 +217,7 @@ function Buttons({ buttonUpdate }) {
             <button
               onClick={() => buttonUpdate('=')}
               type="button"
-              className="w-10 rounded-md border bg-green-800 p-2 hover:bg-green-700"
+              className="w-12 rounded-md border bg-green-800 p-2 hover:bg-green-700"
             >
               =
             </button>

@@ -15,7 +15,7 @@ function Input({ value, inputUpdate, inputRef, buttonUpdate }) {
         }}
         onChange={inputUpdate}
         value={value.join('')}
-        className="h-8 w-full rounded-sm border bg-gray-900 px-1"
+        className="h-10 w-full rounded-sm border bg-gray-900 px-1 text-lg font-medium"
         type="text"
         inputMode="numeric"
       />

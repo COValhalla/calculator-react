@@ -1,10 +1,8 @@
-<h1 align='center'>Vite + React + TypeScript + Eslint + Prettier Template ⚡</h1>
+INITIAL BOILERPLATE TAKEN FROM https://github.com/igdev116/vite-react-ts-eslint-prettier
 
-Create a new project with Vite, React JS, TypeScript, Eslint, Prettier in just 1 second and you don't need to setup anything.
+<h1 align='center'>Vite + React + + TailwindCSS + TypeScript + Eslint + Prettier Template ⚡</h1>
 
-#### **Vercel Deploy: https://vite-react-ts-eslint-prettier.vercel.app**
-
-![image](https://user-images.githubusercontent.com/70432453/170648662-2ff424b9-74e9-4754-a04d-512fe1496a3b.png)
+Create a new project with Vite, React JS, TypeScript, TailwindCSS, Eslint, Prettier in just 1 second and you don't need to setup anything.
 
 ## **Some Features 📋**
 

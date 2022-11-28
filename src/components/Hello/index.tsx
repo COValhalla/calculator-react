@@ -12,7 +12,7 @@ const Hello = () => {
         paddingTop: '50px',
       }}
     >
-      <img src={logo} alt='Logo' style={{ height: '150px' }} />
+      <img src={logo} alt="Logo" style={{ height: '150px' }} />
       <ul
         style={{
           padding: 0,
@@ -28,14 +28,15 @@ const Hello = () => {
         <li>📖 TypeScript</li>
         <li>🔨 Eslint</li>
         <li>💅 Prettier</li>
+        <li className="bg-blue-500 rounded text-white">🎨 Tailwind CSS</li>
       </ul>
       <p>Don&apos;t forgot to install Eslint and Prettier in your VSCode</p>
       <div>
         <a
           style={{ color: '#F24C4C' }}
-          target='_blank'
-          href='https://github.com/igdev116/vite-react-ts-eslint-prettier'
-          rel='noreferrer'
+          target="_blank"
+          href="https://github.com/igdev116/vite-react-ts-eslint-prettier"
+          rel="noreferrer"
         >
           Github
         </a>

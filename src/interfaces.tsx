@@ -1,5 +1,5 @@
 export interface Value {
-  input: string;
+  input: string[];
 }
 export interface Result {
   input: string;

@@ -6,7 +6,7 @@ import Buttons from './components/Buttons';
 import { Value, Result } from './interfaces';
 
 function App() {
-  const [value, setValue] = useState([] as Value[]);
+  const [value, setValue] = useState([] as Value['input']);
   const [result, setResult] = useState([] as Result[]);
   const [error, setError] = useState('');
 

@@ -21,7 +21,7 @@ function App() {
           setResult([...clone, { input: value.join(''), result: evalResult }]);
           setValue([]);
           setError('');
-        } catch (err) {
+        } catch (err: any) {
           setError(err.message);
         }
       } else if (input === 'back') {
@@ -33,7 +33,7 @@ function App() {
       } else if (input !== '=') {
         console.log('Value Test : ', value);
         setValue((prevValue) => [...prevValue, input]);
-        inputRef.current.focus();
+        (inputRef.current as any).focus();
       }
     },
     [value, result]
@@ -41,11 +41,11 @@ function App() {
 
   const inputUpdate = (value: string) => {
     setValue(value.split(''));
-    inputRef.current.focus();
+    (inputRef.current as any).focus();
   };
   const inputAdd = (input: string) => {
     setValue((prevValue) => [...prevValue, input]);
-    inputRef.current.focus();
+    (inputRef.current as any).focus();
   };
 
   return (

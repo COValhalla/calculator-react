@@ -3,5 +3,5 @@ export interface Value {
 }
 export interface Result {
   input: string;
-  result: number;
+  result: string;
 }
